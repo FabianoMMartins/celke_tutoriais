@@ -20,21 +20,40 @@
     <![endif]-->
 	<style type="text/css">
 		body{
-			background-image: url("imagens/praia.jpg")
+			background-image: url("imagens/praia.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
 		}
+        .form-signin
+        {
+            margin-top: 10%;
+        }
+        h3
+        {
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+        }
+        p
+        {
+            text-align: center;
+            color:#999;
+        }
 	</style>
   </head>
   <body>
 	<div class="container">
 
       <form class="form-signin">
-        <h2 class="form-signin-heading">Inscreva-se no Webinário de Bootstrap</h2>
+        <h3 class="form-signin-heading">Faça a sua inscrição </h3>
+        <p>Concorra a diversos prêmios todo mês</p>
         <label for="inputnome" class="sr-only">Nome</label>
         <input type="text" id="inputnome" class="form-control" placeholder="Nome Completo" required autofocus>
         <label for="inputemail" class="sr-only">E-mail</label>
-        <input type="email" id="inputemail" class="form-control" placeholder="Seu Melhor E-mail" required>
+        <input type="email" id="inputemail" class="form-control" placeholder="E-mail" required>
         
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Inscrever-se</button>
+        <button class="btn btn-lg btn-default btn-block" type="submit">Inscrever-se</button>
       </form>
 
     </div> <!-- /container -->
