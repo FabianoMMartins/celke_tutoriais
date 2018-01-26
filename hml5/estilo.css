@@ -1,0 +1,39 @@
+*{margin: 0;
+padding:0;}
+
+#container{
+	margin: 0px auto 0px auto;
+	width: 960px;
+}
+body{
+	background-color: #E8E8E8;
+	color: #2d49a6;
+}
+header{
+	background-color: #2d49a6;
+	color: #FFF;
+	text-align: center;
+	padding: 15px;
+}
+nav{
+	background-color: #eee;
+	height:300px;
+	width: 200px;
+	float:left;
+	padding: 10px;
+}
+section{
+	width:720px;	
+	height:300px;
+	float: left;
+	padding: 10px;
+	background-color: #00BF9B;
+}
+footer{
+	background-color: #2d49a6;
+	height:30px;
+	color: #fff;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
