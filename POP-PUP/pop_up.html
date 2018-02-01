@@ -1,0 +1,103 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title> Celke - Pop-ups</title>
+		<meta charset="utf-8">
+		<style>
+			.popup{
+				position: fixed;
+				top: 0; bottom: 0; 
+				left: 0; right:0;
+				margin: auto;
+				width: 300px;
+				height: 180px;
+				padding: 15px;
+				border: solid 1px #4c4d4f;
+				background: #f5812a;
+				display: none;
+			}
+            
+            
+            .popup1{
+				position: fixed;
+				top: 0; bottom: 0; 
+				left: 0; right:0;
+				margin: auto;
+				width: 300px;
+				height: 180px;
+				padding: 15px;
+				border: solid 1px #ccc;
+				background: #ccc;
+				display: none;
+			}
+            
+            .popup3{
+				position: fixed;
+				top: 0; bottom: 0; 
+				left: 0; right:0;
+				margin: auto;
+				width: 300px;
+				height: 180px;
+				padding: 15px;
+				border: solid 1px #f9f9f9;
+				background: #f9f9f9;
+				display: none;
+			}
+            
+            
+            
+		</style>	
+		<script type="text/javascript">
+			function abrir(){
+				document.getElementById('popup').style.display = 'none';
+                document.getElementById('popup1').style.display = 'block';
+			}
+            function interrogacao(){
+				document.getElementById('popup').style.display = 'block';
+                document.getElementById('popup1').style.display = 'none';
+                
+			}
+             function exclamacao(){
+				document.getElementById('popup1').style.display = 'none';
+                document.getElementById('popup3').style.display = 'block'; 
+                
+			}
+
+			function fechar(){
+				document.getElementById('popup').style.display =  'none';
+			}
+		</script>
+	</head>
+	<body>
+		<div id="popup" class="popup">
+			<p>Inscreva-se para receber mais material</p>			
+		</div>
+        
+        <div id="popup1" class="popup1">
+			<p>Inscreva-se para receber mais material</p>			
+		</div>
+        
+        
+        
+        <div id="popup3" class="popup3">
+			<p>Inscreva-se para receber mais material</p>			
+		</div>
+        
+		
+		<!--ações para o popup -->
+		<a href="javascript: abrir();">1</a><br>
+        <a href="javascript: interrogacao();">2</a><br>
+        <a href="javascript: exclamacao();">3</a><br>
+        
+        
+        
+        
+        
+        
+        
+		<a href="javascript: fechar();">Fechar Pop-up</a><br>
+		
+		<a href="#" onMouseOver="abrir();">Passar o mouse para abrir</a><br>
+		<a href="#" onMouseOver="fechar();">Passar o mouse para fechar</a>
+	</body>	
+</html>
